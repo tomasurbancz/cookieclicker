@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    height: 100vh;
+}
+
+#cibg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+}
+
+#cursorUpgrade {
+    width: 100%;
+    position: relative;
+}
+
+#farmUpgrade {
+    top: 138px;
+    width: 100%;
+    position: relative;
+}
+
+#grandmaUpgrade {
+    top: 69px;
+    width: 100%;
+    position: relative;
+}
+
+
+.buyItems img:hover {
+    cursor: pointer;
+}
+
+#cursorUpgrade:hover {
+    cursor: pointer;
+}
+
+#farmUpgrade:hover {
+    cursor: pointer;
+}
+
+#grandmaUpgrade:hover {
+    cursor: pointer;
+}
+
+.upgradeTitle {
+    font-size: xx-large;
+    color: white;
+    position: absolute;
+    font-weight: bolder;
+    margin-left: 20%;
+}
+
+.upgradePrice {
+    position: absolute;
+    display: flex;
+    color: green;
+    font-weight: bold;
+    font-size: large;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+
+.upgradeAmount {
+    position: absolute;
+    font-size: 50px;
+    margin-top: 1.5%;
+    right: 0;
+}
+
+.CUBG {
+    width: 100%;
+    position: absolute;
+}
+
+#CUCURSOR {
+    position: absolute;
+    height: 65px;
+    left: 5px;
+}
+
+#FUFARM {
+    position: absolute;
+    height: 65px;
+    left: 5px;
+}
+
+#GUGRANDMA {
+    position: absolute;
+    height: 65px;
+    left: 5px;
+}
+
+
+.buyItems {
+    display: flex;
+}
+
+#storeText {
+    margin-top: 20%;
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cookiesInfo {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    margin-top: 20%;
+}
+
+.cookiesInfo > div {
+    text-align: center;
+    opacity: 1;
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#grandmaBar {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+
+.grandma {
+    background-image: url("../img/grandmaFull.png");
+    width: 64px;
+    height: 64px;
+    position: absolute;
+}
+
+.topSeparator {
+    width: 100%;
+    height: 15px;
+    background-image: url("../img/panelHorizontal.png");
+}
+
+#grandmabg {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/grandmaBackGround.png");
+}
+
+#farmBar {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+
+.farm {
+    background-image: url("../img/farmFull.png");
+    width: 64px;
+    height: 64px;
+    position: absolute;
+}
+
+#farmbg {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/farmBackGround.png");
+}  
+
+#cookiesClick {
+    position: absolute;
+    top: 0;
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    user-select: none;
+}
+
+#cookie {
+    width: 50%;
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%, -45%);
+}
+
+#cookie:hover {
+    animation-name: cookieAnim;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+.animate {
+    animation-name: moveUp;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveUp {
+    to {
+        transform: translate(0, -300%);
+    }
+}
+ 
+@keyframes cookieAnim {
+    0% {
+        scale: 1;
+        transform: translate(-50%, -45%);
+    }
+    100% {
+        scale: 1.1;
+        transform: translate(-45%, -45%);
+    }
+}
+
+.separator {
+    width: 0.75%;
+    background-image: url("../img/panelVertical.png");
+}
+
+.cookieBar {
+    width: 29.5%;
+    background-image: url("../img/backGroundDarker.png");
+}
+
+.middleBar {
+    width: 52%;
+    background-image: url("../img/backGroundLighter.png");
+}
+
+.shopBar {
+    width: 17%;
+    background-image: url("../img/backGroundDarker.png");
+}
